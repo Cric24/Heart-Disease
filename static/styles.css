@@ -1,0 +1,155 @@
+/* static/styles.css */
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1f6d46 0%, #5c067e36 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.363);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    overflow-y: auto;
+    animation: fadeIn 1s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    color: #531122;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    animation: fadeInFromTop 1s ease-in-out;
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInFromBottom 1s ease-in-out;
+}
+
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+input[type="number"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f952;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 15px rgba(255, 115, 143, 0.5);
+    outline: none;
+    border-color: #ff577f;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff577f, #ff7eb3);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #ff3e70, #ff6aa9);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 115, 143, 0.3);
+}
+
+input[type="submit"]:active {
+    background: linear-gradient(135deg, #ff265e, #ff578e);
+    transform: translateY(0);
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #ff577f;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.0em;
+    font-weight: 600;
+    animation: fadeInFromTop 1s ease-in-out;
+}
+
+/* Additional Modern Styles */
+input[type="number"]:hover {
+    border-color: #ff577f;
+    background-color: #ffffff48;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #111010;
+}
